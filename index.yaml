@@ -3,7 +3,7 @@ entries:
   elasticsearch:
   - apiVersion: v1
     appVersion: 8.5.1
-    created: "2023-10-20T21:55:42.443922828+05:30"
+    created: "2023-10-20T21:58:33.13466195+05:30"
     description: Official Elastic helm chart for Elasticsearch
     digest: 8a5e70ec72dc480c8a01b079bf7240722da7d017f5683178e23a745d418448ba
     home: https://github.com/elastic/helm-charts
@@ -17,4 +17,4 @@ entries:
     urls:
     - https://diamanticom.github.io/catalog-helm-charts/elasticsearch-8.5.1.tgz
     version: 8.5.1
-generated: "2023-10-20T21:55:42.44159727+05:30"
+generated: "2023-10-20T21:58:33.132324551+05:30"
