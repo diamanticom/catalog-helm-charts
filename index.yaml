@@ -1,9 +1,45 @@
 apiVersion: v1
 entries:
+  argo-cd:
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: changed
+          description: Replace non-existing examples with official example domain (RFC 2606)
+      artifacthub.io/signKey: |
+        fingerprint: 2B8F22F57260EFA67BE1C5824B11F800CD9D2252
+        url: https://argoproj.github.io/argo-helm/pgp_keys.asc
+    apiVersion: v2
+    appVersion: v2.9.1
+    created: "2023-11-20T18:52:29.982053298+05:30"
+    dependencies:
+    - condition: redis-ha.enabled
+      name: redis-ha
+      repository: https://dandydeveloper.github.io/charts/
+      version: 4.23.0
+    description: A Helm chart for Argo CD, a declarative, GitOps continuous delivery
+      tool for Kubernetes.
+    digest: beffcf714d6f365a699d6c460d46e3ddabe8cada428d76681fc316ffbf285e7f
+    home: https://github.com/argoproj/argo-helm
+    icon: https://argo-cd.readthedocs.io/en/stable/assets/logo.png
+    keywords:
+    - argoproj
+    - argocd
+    - gitops
+    kubeVersion: '>=1.23.0-0'
+    maintainers:
+    - name: argoproj
+      url: https://argoproj.github.io/
+    name: argo-cd
+    sources:
+    - https://github.com/argoproj/argo-helm/tree/main/charts/argo-cd
+    - https://github.com/argoproj/argo-cd
+    urls:
+    - https://diamanticom.github.io/catalog-helm-charts/argo-cd-5.51.3.tgz
+    version: 5.51.3
   harbor:
   - apiVersion: v1
     appVersion: 2.9.1
-    created: "2023-11-20T14:45:47.431672954+05:30"
+    created: "2023-11-20T18:52:30.106274221+05:30"
     description: An open source trusted cloud native registry that stores, signs,
       and scans content
     digest: 2ab4fd8225bda1e9796bcfbbaae738e1e157a84f8103f3fbec6425fcb375bfd5
@@ -27,4 +63,4 @@ entries:
     urls:
     - https://diamanticom.github.io/catalog-helm-charts/harbor-1.13.1.tgz
     version: 1.13.1
-generated: "2023-11-20T14:45:47.423139421+05:30"
+generated: "2023-11-20T18:52:29.962145712+05:30"
