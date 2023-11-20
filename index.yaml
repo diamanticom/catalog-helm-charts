@@ -10,7 +10,7 @@ entries:
         url: https://argoproj.github.io/argo-helm/pgp_keys.asc
     apiVersion: v2
     appVersion: v2.9.1
-    created: "2023-11-20T18:52:29.982053298+05:30"
+    created: "2023-11-20T21:52:30.897364502+05:30"
     dependencies:
     - condition: redis-ha.enabled
       name: redis-ha
@@ -39,7 +39,7 @@ entries:
   harbor:
   - apiVersion: v1
     appVersion: 2.9.1
-    created: "2023-11-20T18:52:30.106274221+05:30"
+    created: "2023-11-20T21:52:31.042551642+05:30"
     description: An open source trusted cloud native registry that stores, signs,
       and scans content
     digest: 2ab4fd8225bda1e9796bcfbbaae738e1e157a84f8103f3fbec6425fcb375bfd5
@@ -63,4 +63,38 @@ entries:
     urls:
     - https://diamanticom.github.io/catalog-helm-charts/harbor-1.13.1.tgz
     version: 1.13.1
-generated: "2023-11-20T18:52:29.962145712+05:30"
+  mysql:
+  - annotations:
+      category: Database
+    apiVersion: v2
+    appVersion: 8.0.31
+    created: "2023-11-20T21:52:31.065430658+05:30"
+    dependencies:
+    - name: common
+      repository: https://marketplace.azurecr.io/helm/v1/repo
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: MySQL is a fast, reliable, scalable, and easy to use open source
+      relational database system. Designed to handle mission-critical, heavy-load
+      production applications.
+    digest: bfe5e7c570a148c474c71b26f23f18f933639b5cb5b3daf7a1ab1c821652ada9
+    home: https://github.com/bitnami/charts/tree/main/bitnami/mysql
+    icon: https://bitnami.com/assets/stacks/mysql/img/mysql-stack-220x234.png
+    keywords:
+    - mysql
+    - database
+    - sql
+    - cluster
+    - high availability
+    maintainers:
+    - name: Bitnami
+      url: https://github.com/bitnami/charts
+    name: mysql
+    sources:
+    - https://github.com/bitnami/containers/tree/main/bitnami/mysql
+    - https://mysql.com
+    urls:
+    - https://diamanticom.github.io/catalog-helm-charts/mysql-9.4.3.tgz
+    version: 9.4.3
+generated: "2023-11-20T21:52:30.653396458+05:30"
