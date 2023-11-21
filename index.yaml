@@ -10,7 +10,7 @@ entries:
         url: https://argoproj.github.io/argo-helm/pgp_keys.asc
     apiVersion: v2
     appVersion: v2.9.1
-    created: "2023-11-21T14:21:26.402312267+05:30"
+    created: "2023-11-21T14:38:29.328815273+05:30"
     dependencies:
     - condition: redis-ha.enabled
       name: redis-ha
@@ -39,7 +39,7 @@ entries:
   harbor:
   - apiVersion: v1
     appVersion: 2.9.1
-    created: "2023-11-21T14:21:26.431468094+05:30"
+    created: "2023-11-21T14:38:29.338119463+05:30"
     description: An open source trusted cloud native registry that stores, signs,
       and scans content
     digest: 2ab4fd8225bda1e9796bcfbbaae738e1e157a84f8103f3fbec6425fcb375bfd5
@@ -63,12 +63,47 @@ entries:
     urls:
     - https://diamanticom.github.io/catalog-helm-charts/harbor-1.13.1.tgz
     version: 1.13.1
+  mongodb:
+  - annotations:
+      category: Database
+    apiVersion: v2
+    appVersion: 6.0.2
+    created: "2023-11-21T14:38:29.350382519+05:30"
+    dependencies:
+    - name: common
+      repository: https://marketplace.azurecr.io/helm/v1/repo
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: MongoDB(R) is a relational open source NoSQL database. Easy to use,
+      it stores data in JSON-like documents. Automated scalability and high-performance.
+      Ideal for developing cloud native applications.
+    digest: ffb1b254506171ff5af92f3941c2a2d9480c1984f6945ca94febeb327e4d81e2
+    home: https://github.com/bitnami/charts/tree/main/bitnami/mongodb
+    icon: https://bitnami.com/assets/stacks/mongodb/img/mongodb-stack-220x234.png
+    keywords:
+    - mongodb
+    - database
+    - nosql
+    - cluster
+    - replicaset
+    - replication
+    maintainers:
+    - name: Bitnami
+      url: https://github.com/bitnami/charts
+    name: mongodb
+    sources:
+    - https://github.com/bitnami/containers/tree/main/bitnami/mongodb
+    - https://mongodb.org
+    urls:
+    - https://diamanticom.github.io/catalog-helm-charts/mongodb-13.3.1.tgz
+    version: 13.3.1
   mysql:
   - annotations:
       category: Database
     apiVersion: v2
     appVersion: 8.0.31
-    created: "2023-11-21T14:21:26.443066611+05:30"
+    created: "2023-11-21T14:38:29.355665327+05:30"
     dependencies:
     - name: common
       repository: https://marketplace.azurecr.io/helm/v1/repo
@@ -102,7 +137,7 @@ entries:
       category: Database
     apiVersion: v2
     appVersion: 15.1.0
-    created: "2023-11-21T14:21:26.453084886+05:30"
+    created: "2023-11-21T14:38:29.365310141+05:30"
     dependencies:
     - name: common
       repository: https://marketplace.azurecr.io/helm/v1/repo
@@ -132,4 +167,4 @@ entries:
     urls:
     - https://diamanticom.github.io/catalog-helm-charts/postgresql-12.1.2.tgz
     version: 12.1.2
-generated: "2023-11-21T14:21:26.323241052+05:30"
+generated: "2023-11-21T14:38:29.254802464+05:30"
