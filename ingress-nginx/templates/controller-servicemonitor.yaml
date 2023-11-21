@@ -5,8 +5,6 @@ metadata:
   name: {{ include "ingress-nginx.controller.fullname" . }}
 {{- if .Values.controller.metrics.serviceMonitor.namespace }}
   namespace: {{ .Values.controller.metrics.serviceMonitor.namespace | quote }}
-{{- else }}
-  namespace: {{ include "ingress-nginx.namespace" . }}
 {{- end }}
   labels:
     {{- include "ingress-nginx.labels" . | nindent 4 }}
@@ -16,13 +14,10 @@ metadata:
   {{- end }}
 spec:
   endpoints:
-    - port: {{ .Values.controller.metrics.portName }}
+    - port: metrics
       interval: {{ .Values.controller.metrics.serviceMonitor.scrapeInterval }}
     {{- if .Values.controller.metrics.serviceMonitor.honorLabels }}
       honorLabels: true
-    {{- end }}
-    {{- if .Values.controller.metrics.serviceMonitor.relabelings }}
-      relabelings: {{ toYaml .Values.controller.metrics.serviceMonitor.relabelings | nindent 8 }}
     {{- end }}
     {{- if .Values.controller.metrics.serviceMonitor.metricRelabelings }}
       metricRelabelings: {{ toYaml .Values.controller.metrics.serviceMonitor.metricRelabelings | nindent 8 }}
@@ -32,10 +27,10 @@ spec:
 {{- end }}
 {{- if .Values.controller.metrics.serviceMonitor.namespaceSelector }}
   namespaceSelector: {{ toYaml .Values.controller.metrics.serviceMonitor.namespaceSelector | nindent 4 }}
-{{- else }}
+{{ else }}
   namespaceSelector:
     matchNames:
-      - {{ include "ingress-nginx.namespace" . }}
+      - {{ .Release.Namespace }}
 {{- end }}
 {{- if .Values.controller.metrics.serviceMonitor.targetLabels }}
   targetLabels:

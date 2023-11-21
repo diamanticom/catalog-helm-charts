@@ -1,8 +1,11 @@
 annotations:
-  artifacthub.io/changes: '- "Update Ingress-Nginx version controller-v1.9.4"'
-  artifacthub.io/prerelease: "false"
+  artifacthub.io/changes: |
+    - "#8307 Nginx v1.19.10"
+    - "#8386 Alpine 3.14.4"
+    - "#8339 Patch OpenSSL CVE-2022-0778"
+    - "#8321 Vulnerability CVE-2022-23308 for libxml2"
 apiVersion: v2
-appVersion: 1.9.4
+appVersion: 0.51.0
 description: Ingress controller for Kubernetes using NGINX as a reverse proxy and
   load balancer
 home: https://github.com/kubernetes/ingress-nginx
@@ -10,7 +13,7 @@ icon: https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Nginx_logo.svg/5
 keywords:
 - ingress
 - nginx
-kubeVersion: '>=1.20.0-0'
+kubeVersion: '>=1.16.0-0'
 maintainers:
 - name: rikatz
 - name: strongjz
@@ -18,4 +21,5 @@ maintainers:
 name: ingress-nginx
 sources:
 - https://github.com/kubernetes/ingress-nginx
-version: 4.8.3
+type: application
+version: 3.41.0
