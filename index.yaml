@@ -3,7 +3,7 @@ entries:
   harbor:
   - apiVersion: v1
     appVersion: 2.9.1
-    created: "2023-11-23T15:57:26.981981512+05:30"
+    created: "2023-11-23T17:01:30.304939086+05:30"
     description: An open source trusted cloud native registry that stores, signs,
       and scans content
     digest: 2ab4fd8225bda1e9796bcfbbaae738e1e157a84f8103f3fbec6425fcb375bfd5
@@ -27,42 +27,12 @@ entries:
     urls:
     - https://diamanticom.github.io/catalog-helm-charts/harbor-1.13.1.tgz
     version: 1.13.1
-  ingress-nginx:
-  - annotations:
-      artifacthub.io/changes: |
-        - "#8307 Nginx v1.19.10"
-        - "#8386 Alpine 3.14.4"
-        - "#8339 Patch OpenSSL CVE-2022-0778"
-        - "#8321 Vulnerability CVE-2022-23308 for libxml2"
-    apiVersion: v2
-    appVersion: 0.51.0
-    created: "2023-11-23T15:57:26.993702766+05:30"
-    description: Ingress controller for Kubernetes using NGINX as a reverse proxy
-      and load balancer
-    digest: 1ff69a827fdf054b01347ef494b32f87acd0648e7344805d41e6e7d13a1344e2
-    home: https://github.com/kubernetes/ingress-nginx
-    icon: https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Nginx_logo.svg/500px-Nginx_logo.svg.png
-    keywords:
-    - ingress
-    - nginx
-    kubeVersion: '>=1.16.0-0'
-    maintainers:
-    - name: rikatz
-    - name: strongjz
-    - name: tao12345666333
-    name: ingress-nginx
-    sources:
-    - https://github.com/kubernetes/ingress-nginx
-    type: application
-    urls:
-    - https://diamanticom.github.io/catalog-helm-charts/ingress-nginx-3.41.0.tgz
-    version: 3.41.0
   mongodb:
   - annotations:
       category: Database
     apiVersion: v2
     appVersion: 6.0.2
-    created: "2023-11-23T15:57:27.033420174+05:30"
+    created: "2023-11-23T17:01:30.395924549+05:30"
     dependencies:
     - name: common
       repository: https://marketplace.azurecr.io/helm/v1/repo
@@ -97,7 +67,7 @@ entries:
       category: Database
     apiVersion: v2
     appVersion: 8.0.31
-    created: "2023-11-23T15:57:27.04599789+05:30"
+    created: "2023-11-23T17:01:30.400136163+05:30"
     dependencies:
     - name: common
       repository: https://marketplace.azurecr.io/helm/v1/repo
@@ -126,12 +96,47 @@ entries:
     urls:
     - https://diamanticom.github.io/catalog-helm-charts/mysql-9.4.3.tgz
     version: 9.4.3
+  nginx-ingress-controller:
+  - annotations:
+      category: Infrastructure
+    apiVersion: v2
+    appVersion: 1.4.0
+    created: "2023-11-23T17:01:30.405316717+05:30"
+    dependencies:
+    - name: common
+      repository: https://marketplace.azurecr.io/helm/v1/repo
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: NGINX Ingress Controller is an Ingress controller that manages external
+      access to HTTP services in a Kubernetes cluster using NGINX.
+    digest: 8d0c445b51239cd81042b4b2c1916c07edf2ea970050d68fa54b7072e8c9359c
+    home: https://github.com/bitnami/charts/tree/master/bitnami/nginx-ingress-controller
+    icon: https://bitnami.com/assets/stacks/nginx-ingress-controller/img/nginx-ingress-controller-stack-220x234.png
+    keywords:
+    - ingress
+    - nginx
+    - http
+    - web
+    - www
+    - reverse proxy
+    kubeVersion: '>= 1.20.0-0'
+    maintainers:
+    - name: Bitnami
+      url: https://github.com/bitnami/charts
+    name: nginx-ingress-controller
+    sources:
+    - https://github.com/bitnami/containers/tree/main/bitnami/nginx-ingress-controller
+    - https://github.com/kubernetes/ingress-nginx
+    urls:
+    - https://diamanticom.github.io/catalog-helm-charts/nginx-ingress-controller-9.3.18.tgz
+    version: 9.3.18
   postgresql:
   - annotations:
       category: Database
     apiVersion: v2
     appVersion: 15.1.0
-    created: "2023-11-23T15:57:27.057060826+05:30"
+    created: "2023-11-23T17:01:30.41066462+05:30"
     dependencies:
     - name: common
       repository: https://marketplace.azurecr.io/helm/v1/repo
@@ -161,4 +166,4 @@ entries:
     urls:
     - https://diamanticom.github.io/catalog-helm-charts/postgresql-12.1.2.tgz
     version: 12.1.2
-generated: "2023-11-23T15:57:26.943544476+05:30"
+generated: "2023-11-23T17:01:30.298983107+05:30"
