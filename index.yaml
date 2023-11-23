@@ -3,7 +3,7 @@ entries:
   harbor:
   - apiVersion: v1
     appVersion: 2.9.1
-    created: "2023-11-23T17:01:30.304939086+05:30"
+    created: "2023-11-23T18:53:35.781546004+05:30"
     description: An open source trusted cloud native registry that stores, signs,
       and scans content
     digest: 2ab4fd8225bda1e9796bcfbbaae738e1e157a84f8103f3fbec6425fcb375bfd5
@@ -32,7 +32,7 @@ entries:
       category: Database
     apiVersion: v2
     appVersion: 6.0.2
-    created: "2023-11-23T17:01:30.395924549+05:30"
+    created: "2023-11-23T18:53:35.798060542+05:30"
     dependencies:
     - name: common
       repository: https://marketplace.azurecr.io/helm/v1/repo
@@ -67,7 +67,7 @@ entries:
       category: Database
     apiVersion: v2
     appVersion: 8.0.31
-    created: "2023-11-23T17:01:30.400136163+05:30"
+    created: "2023-11-23T18:53:35.826140068+05:30"
     dependencies:
     - name: common
       repository: https://marketplace.azurecr.io/helm/v1/repo
@@ -101,7 +101,7 @@ entries:
       category: Infrastructure
     apiVersion: v2
     appVersion: 1.4.0
-    created: "2023-11-23T17:01:30.405316717+05:30"
+    created: "2023-11-23T18:53:35.84445875+05:30"
     dependencies:
     - name: common
       repository: https://marketplace.azurecr.io/helm/v1/repo
@@ -136,7 +136,7 @@ entries:
       category: Database
     apiVersion: v2
     appVersion: 15.1.0
-    created: "2023-11-23T17:01:30.41066462+05:30"
+    created: "2023-11-23T18:53:35.871392452+05:30"
     dependencies:
     - name: common
       repository: https://marketplace.azurecr.io/helm/v1/repo
@@ -166,4 +166,4 @@ entries:
     urls:
     - https://diamanticom.github.io/catalog-helm-charts/postgresql-12.1.2.tgz
     version: 12.1.2
-generated: "2023-11-23T17:01:30.298983107+05:30"
+generated: "2023-11-23T18:53:35.754949137+05:30"
