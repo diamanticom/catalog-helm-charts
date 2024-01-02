@@ -1,46 +1,9 @@
 apiVersion: v1
 entries:
-  argo-cd:
-  - annotations:
-      category: Infrastructure
-    apiVersion: v2
-    appVersion: 2.4.12
-    created: "2024-01-02T12:02:02.200301373+05:30"
-    dependencies:
-    - condition: redis.enabled
-      name: redis
-      repository: https://marketplace.azurecr.io/helm/v1/repo
-      version: 17.x.x
-    - name: common
-      repository: https://marketplace.azurecr.io/helm/v1/repo
-      tags:
-      - bitnami-common
-      version: 2.x.x
-    description: Argo CD is a continuous delivery tool for Kubernetes based on GitOps.
-    digest: dbfbaa0962c35fa7bc1bf3bd91c8514083a095c87254e7239a77dda00b666f10
-    home: https://argoproj.github.io/argo-cd/
-    icon: https://bitnami.com/assets/stacks/argo-cd/img/argo-cd-stack-220x234.png
-    keywords:
-    - Continuous delivery
-    - Continuous deployment
-    - Devops
-    - Kubernetes
-    maintainers:
-    - name: Bitnami
-      url: https://github.com/bitnami/charts
-    name: argo-cd
-    sources:
-    - https://github.com/bitnami/containers/tree/main/bitnami/argo-cd
-    - https://github.com/argoproj/argo-cd/
-    - https://github.com/bitnami/containers/tree/main/bitnami/dex
-    - https://github.com/dexidp/dex
-    urls:
-    - https://diamanticom.github.io/catalog-helm-charts/argo-cd-4.2.0.tgz
-    version: 4.2.0
   harbor:
   - apiVersion: v1
     appVersion: 2.9.1
-    created: "2024-01-02T12:02:02.203537489+05:30"
+    created: "2024-01-02T12:06:57.369566025+05:30"
     description: An open source trusted cloud native registry that stores, signs,
       and scans content
     digest: 2ab4fd8225bda1e9796bcfbbaae738e1e157a84f8103f3fbec6425fcb375bfd5
@@ -69,7 +32,7 @@ entries:
       category: Database
     apiVersion: v2
     appVersion: 6.0.2
-    created: "2024-01-02T12:02:02.208732535+05:30"
+    created: "2024-01-02T12:06:57.384466301+05:30"
     dependencies:
     - name: common
       repository: https://marketplace.azurecr.io/helm/v1/repo
@@ -104,7 +67,7 @@ entries:
       category: Database
     apiVersion: v2
     appVersion: 8.0.31
-    created: "2024-01-02T12:02:02.212121709+05:30"
+    created: "2024-01-02T12:06:57.389319153+05:30"
     dependencies:
     - name: common
       repository: https://marketplace.azurecr.io/helm/v1/repo
@@ -138,7 +101,7 @@ entries:
       category: Infrastructure
     apiVersion: v2
     appVersion: 1.4.0
-    created: "2024-01-02T12:02:02.215032004+05:30"
+    created: "2024-01-02T12:06:57.393828659+05:30"
     dependencies:
     - name: common
       repository: https://marketplace.azurecr.io/helm/v1/repo
@@ -173,7 +136,7 @@ entries:
       category: Database
     apiVersion: v2
     appVersion: 15.1.0
-    created: "2024-01-02T12:02:02.219358079+05:30"
+    created: "2024-01-02T12:06:57.400953698+05:30"
     dependencies:
     - name: common
       repository: https://marketplace.azurecr.io/helm/v1/repo
@@ -203,4 +166,4 @@ entries:
     urls:
     - https://diamanticom.github.io/catalog-helm-charts/postgresql-12.1.2.tgz
     version: 12.1.2
-generated: "2024-01-02T12:02:02.185742338+05:30"
+generated: "2024-01-02T12:06:57.356138506+05:30"
