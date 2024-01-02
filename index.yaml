@@ -5,7 +5,7 @@ entries:
       category: Infrastructure
     apiVersion: v2
     appVersion: 2.4.12
-    created: "2024-01-02T11:51:01.521528612+05:30"
+    created: "2024-01-02T12:02:02.200301373+05:30"
     dependencies:
     - condition: redis.enabled
       name: redis
@@ -40,7 +40,7 @@ entries:
   harbor:
   - apiVersion: v1
     appVersion: 2.9.1
-    created: "2024-01-02T11:51:01.524473604+05:30"
+    created: "2024-01-02T12:02:02.203537489+05:30"
     description: An open source trusted cloud native registry that stores, signs,
       and scans content
     digest: 2ab4fd8225bda1e9796bcfbbaae738e1e157a84f8103f3fbec6425fcb375bfd5
@@ -69,7 +69,7 @@ entries:
       category: Database
     apiVersion: v2
     appVersion: 6.0.2
-    created: "2024-01-02T11:51:01.529789275+05:30"
+    created: "2024-01-02T12:02:02.208732535+05:30"
     dependencies:
     - name: common
       repository: https://marketplace.azurecr.io/helm/v1/repo
@@ -104,7 +104,7 @@ entries:
       category: Database
     apiVersion: v2
     appVersion: 8.0.31
-    created: "2024-01-02T11:51:01.533676884+05:30"
+    created: "2024-01-02T12:02:02.212121709+05:30"
     dependencies:
     - name: common
       repository: https://marketplace.azurecr.io/helm/v1/repo
@@ -138,7 +138,7 @@ entries:
       category: Infrastructure
     apiVersion: v2
     appVersion: 1.4.0
-    created: "2024-01-02T11:51:01.54845272+05:30"
+    created: "2024-01-02T12:02:02.215032004+05:30"
     dependencies:
     - name: common
       repository: https://marketplace.azurecr.io/helm/v1/repo
@@ -173,7 +173,7 @@ entries:
       category: Database
     apiVersion: v2
     appVersion: 15.1.0
-    created: "2024-01-02T11:51:01.552233824+05:30"
+    created: "2024-01-02T12:02:02.219358079+05:30"
     dependencies:
     - name: common
       repository: https://marketplace.azurecr.io/helm/v1/repo
@@ -203,4 +203,4 @@ entries:
     urls:
     - https://diamanticom.github.io/catalog-helm-charts/postgresql-12.1.2.tgz
     version: 12.1.2
-generated: "2024-01-02T11:51:01.510203358+05:30"
+generated: "2024-01-02T12:02:02.185742338+05:30"
