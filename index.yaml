@@ -9,7 +9,7 @@ entries:
         fingerprint: 2B8F22F57260EFA67BE1C5824B11F800CD9D2252
         url: https://argoproj.github.io/argo-helm/pgp_keys.asc
     apiVersion: v2
-    created: "2024-01-02T12:15:09.648572995+05:30"
+    created: "2024-01-02T12:21:44.195230798+05:30"
     description: A Helm chart for managing additional Argo CD Applications and Projects
     digest: 3d49bf8e8a6143dbb78d9ef9464ac90319e608ee08606ddf86e3859a40b74894
     home: https://github.com/argoproj/argo-helm
@@ -29,7 +29,7 @@ entries:
   harbor:
   - apiVersion: v1
     appVersion: 2.9.1
-    created: "2024-01-02T12:15:09.651555719+05:30"
+    created: "2024-01-02T12:21:44.199648013+05:30"
     description: An open source trusted cloud native registry that stores, signs,
       and scans content
     digest: 2ab4fd8225bda1e9796bcfbbaae738e1e157a84f8103f3fbec6425fcb375bfd5
@@ -58,7 +58,7 @@ entries:
       category: Database
     apiVersion: v2
     appVersion: 6.0.2
-    created: "2024-01-02T12:15:09.656705801+05:30"
+    created: "2024-01-02T12:21:44.208079777+05:30"
     dependencies:
     - name: common
       repository: https://marketplace.azurecr.io/helm/v1/repo
@@ -93,7 +93,7 @@ entries:
       category: Database
     apiVersion: v2
     appVersion: 8.0.31
-    created: "2024-01-02T12:15:09.659903215+05:30"
+    created: "2024-01-02T12:21:44.211682648+05:30"
     dependencies:
     - name: common
       repository: https://marketplace.azurecr.io/helm/v1/repo
@@ -127,7 +127,7 @@ entries:
       category: Infrastructure
     apiVersion: v2
     appVersion: 1.4.0
-    created: "2024-01-02T12:15:09.663251465+05:30"
+    created: "2024-01-02T12:21:44.214501666+05:30"
     dependencies:
     - name: common
       repository: https://marketplace.azurecr.io/helm/v1/repo
@@ -162,7 +162,7 @@ entries:
       category: Database
     apiVersion: v2
     appVersion: 15.1.0
-    created: "2024-01-02T12:15:09.667737389+05:30"
+    created: "2024-01-02T12:21:44.219937821+05:30"
     dependencies:
     - name: common
       repository: https://marketplace.azurecr.io/helm/v1/repo
@@ -192,4 +192,4 @@ entries:
     urls:
     - https://diamanticom.github.io/catalog-helm-charts/postgresql-12.1.2.tgz
     version: 12.1.2
-generated: "2024-01-02T12:15:09.648055229+05:30"
+generated: "2024-01-02T12:21:44.194422554+05:30"
