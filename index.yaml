@@ -5,7 +5,7 @@ entries:
       category: Infrastructure
     apiVersion: v2
     appVersion: 2.4.12
-    created: "2024-01-03T16:40:23.325172743+05:30"
+    created: "2024-03-13T01:56:53.261394246-07:00"
     dependencies:
     - condition: redis.enabled
       name: redis
@@ -37,10 +37,51 @@ entries:
     urls:
     - https://diamanticom.github.io/catalog-helm-charts/argo-cd-4.2.0.tgz
     version: 4.2.0
+  elasticsearch:
+  - annotations:
+      category: Analytics
+      images: |
+        - name: elasticsearch
+          image: docker.io/bitnami/elasticsearch:8.12.2-debian-12-r0
+        - name: elasticsearch-exporter
+          image: docker.io/bitnami/elasticsearch-exporter:1.7.0-debian-12-r11
+        - name: os-shell
+          image: docker.io/bitnami/os-shell:12-debian-12-r16
+      licenses: Apache-2.0
+    apiVersion: v2
+    appVersion: 8.12.2
+    created: "2024-03-13T01:56:53.29672425-07:00"
+    dependencies:
+    - condition: global.kibanaEnabled
+      name: kibana
+      repository: oci://registry-1.docker.io/bitnamicharts
+      version: 10.x.x
+    - name: common
+      repository: oci://registry-1.docker.io/bitnamicharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: Elasticsearch is a distributed search and analytics engine. It is
+      used for web search, log monitoring, and real-time analytics. Ideal for Big
+      Data applications.
+    digest: 7e3cc8e348939414caa699c37d090934c01d3fefa96a9b4b70d3f8cc322a62b0
+    home: https://bitnami.com
+    icon: https://bitnami.com/assets/stacks/elasticsearch/img/elasticsearch-stack-220x234.png
+    keywords:
+    - elasticsearch
+    maintainers:
+    - name: VMware, Inc.
+      url: https://github.com/bitnami/charts
+    name: elasticsearch
+    sources:
+    - https://github.com/bitnami/charts/tree/main/bitnami/elasticsearch
+    urls:
+    - https://diamanticom.github.io/catalog-helm-charts/elasticsearch-19.21.2.tgz
+    version: 19.21.2
   harbor:
   - apiVersion: v1
     appVersion: 2.9.1
-    created: "2024-01-03T16:40:23.328567751+05:30"
+    created: "2024-03-13T01:56:53.308885118-07:00"
     description: An open source trusted cloud native registry that stores, signs,
       and scans content
     digest: 2ab4fd8225bda1e9796bcfbbaae738e1e157a84f8103f3fbec6425fcb375bfd5
@@ -69,7 +110,7 @@ entries:
       category: Database
     apiVersion: v2
     appVersion: 6.0.2
-    created: "2024-01-03T16:40:23.342656775+05:30"
+    created: "2024-03-13T01:56:53.323878557-07:00"
     dependencies:
     - name: common
       repository: https://marketplace.azurecr.io/helm/v1/repo
@@ -104,7 +145,7 @@ entries:
       category: Database
     apiVersion: v2
     appVersion: 8.0.31
-    created: "2024-01-03T16:40:23.345811052+05:30"
+    created: "2024-03-13T01:56:53.332965293-07:00"
     dependencies:
     - name: common
       repository: https://marketplace.azurecr.io/helm/v1/repo
@@ -138,7 +179,7 @@ entries:
       category: Infrastructure
     apiVersion: v2
     appVersion: 1.4.0
-    created: "2024-01-03T16:40:23.357091263+05:30"
+    created: "2024-03-13T01:56:53.343554308-07:00"
     dependencies:
     - name: common
       repository: https://marketplace.azurecr.io/helm/v1/repo
@@ -173,7 +214,7 @@ entries:
       category: Database
     apiVersion: v2
     appVersion: 15.1.0
-    created: "2024-01-03T16:40:23.368174696+05:30"
+    created: "2024-03-13T01:56:53.355484554-07:00"
     dependencies:
     - name: common
       repository: https://marketplace.azurecr.io/helm/v1/repo
@@ -203,4 +244,4 @@ entries:
     urls:
     - https://diamanticom.github.io/catalog-helm-charts/postgresql-12.1.2.tgz
     version: 12.1.2
-generated: "2024-01-03T16:40:23.288763805+05:30"
+generated: "2024-03-13T01:56:53.230166496-07:00"
