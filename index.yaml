@@ -5,7 +5,7 @@ entries:
       category: Infrastructure
     apiVersion: v2
     appVersion: 2.4.12
-    created: "2024-03-13T01:58:34.799859549-07:00"
+    created: "2024-04-22T03:38:34.637451724-07:00"
     dependencies:
     - condition: redis.enabled
       name: redis
@@ -50,7 +50,7 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 8.12.2
-    created: "2024-03-13T01:58:34.823792886-07:00"
+    created: "2024-04-22T03:38:34.704284672-07:00"
     dependencies:
     - condition: global.kibanaEnabled
       name: kibana
@@ -81,7 +81,7 @@ entries:
   harbor:
   - apiVersion: v1
     appVersion: 2.9.1
-    created: "2024-03-13T01:58:34.835213796-07:00"
+    created: "2024-04-22T03:38:34.718918356-07:00"
     description: An open source trusted cloud native registry that stores, signs,
       and scans content
     digest: 2ab4fd8225bda1e9796bcfbbaae738e1e157a84f8103f3fbec6425fcb375bfd5
@@ -122,7 +122,7 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 3.7.0
-    created: "2024-03-13T01:58:34.865112486-07:00"
+    created: "2024-04-22T03:38:34.755563355-07:00"
     dependencies:
     - condition: zookeeper.enabled
       name: zookeeper
@@ -159,7 +159,7 @@ entries:
       category: Database
     apiVersion: v2
     appVersion: 6.0.2
-    created: "2024-03-13T01:58:34.881233356-07:00"
+    created: "2024-04-22T03:38:35.074836088-07:00"
     dependencies:
     - name: common
       repository: https://marketplace.azurecr.io/helm/v1/repo
@@ -194,7 +194,7 @@ entries:
       category: Database
     apiVersion: v2
     appVersion: 8.0.31
-    created: "2024-03-13T01:58:34.89068452-07:00"
+    created: "2024-04-22T03:38:35.083456082-07:00"
     dependencies:
     - name: common
       repository: https://marketplace.azurecr.io/helm/v1/repo
@@ -228,7 +228,7 @@ entries:
       category: Infrastructure
     apiVersion: v2
     appVersion: 1.4.0
-    created: "2024-03-13T01:58:34.898894855-07:00"
+    created: "2024-04-22T03:38:35.091168502-07:00"
     dependencies:
     - name: common
       repository: https://marketplace.azurecr.io/helm/v1/repo
@@ -261,9 +261,50 @@ entries:
   postgresql:
   - annotations:
       category: Database
+      images: |
+        - name: os-shell
+          image: docker.io/bitnami/os-shell:12-debian-12-r16
+        - name: postgres-exporter
+          image: docker.io/bitnami/postgres-exporter:0.15.0-debian-12-r14
+        - name: postgresql
+          image: docker.io/bitnami/postgresql:16.2.0-debian-12-r8
+      licenses: Apache-2.0
+    apiVersion: v2
+    appVersion: 16.2.0
+    created: "2024-04-22T03:38:35.11545851-07:00"
+    dependencies:
+    - name: common
+      repository: oci://registry-1.docker.io/bitnamicharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: PostgreSQL (Postgres) is an open source object-relational database
+      known for reliability and data integrity. ACID-compliant, it supports foreign
+      keys, joins, views, triggers and stored procedures.
+    digest: ba8d456490ecd9476d68bc76823d7558379d7a542502ea29b8a9ae437537231d
+    home: https://bitnami.com
+    icon: https://bitnami.com/assets/stacks/postgresql/img/postgresql-stack-220x234.png
+    keywords:
+    - postgresql
+    - postgres
+    - database
+    - sql
+    - replication
+    - cluster
+    maintainers:
+    - name: VMware, Inc.
+      url: https://github.com/bitnami/charts
+    name: postgresql
+    sources:
+    - https://github.com/bitnami/charts/tree/main/bitnami/postgresql
+    urls:
+    - https://diamanticom.github.io/catalog-helm-charts/postgresql-14.3.3.tgz
+    version: 14.3.3
+  - annotations:
+      category: Database
     apiVersion: v2
     appVersion: 15.1.0
-    created: "2024-03-13T01:58:34.912308541-07:00"
+    created: "2024-04-22T03:38:35.105069251-07:00"
     dependencies:
     - name: common
       repository: https://marketplace.azurecr.io/helm/v1/repo
@@ -293,4 +334,15 @@ entries:
     urls:
     - https://diamanticom.github.io/catalog-helm-charts/postgresql-12.1.2.tgz
     version: 12.1.2
-generated: "2024-03-13T01:58:34.766655486-07:00"
+  splunk:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2024-04-22T03:38:35.136027355-07:00"
+    description: A Helm chart for Kubernetes
+    digest: a50c295bcf2bb6ca8b8858a161f0aebf5fda44186ff92fa26d8bcf2a3b67aaa1
+    name: splunk
+    type: application
+    urls:
+    - https://diamanticom.github.io/catalog-helm-charts/splunk-0.1.0.tgz
+    version: 0.1.0
+generated: "2024-04-22T03:38:34.606131101-07:00"
