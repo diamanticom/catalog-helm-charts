@@ -5,7 +5,7 @@ entries:
       category: Infrastructure
     apiVersion: v2
     appVersion: 2.4.12
-    created: "2024-05-07T01:44:53.16840317-07:00"
+    created: "2024-05-07T02:10:16.817523329-07:00"
     dependencies:
     - condition: redis.enabled
       name: redis
@@ -50,7 +50,7 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 8.13.2
-    created: "2024-05-07T01:44:53.218306391-07:00"
+    created: "2024-05-07T02:10:16.868399482-07:00"
     dependencies:
     - condition: global.kibanaEnabled
       name: kibana
@@ -90,7 +90,7 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 8.12.2
-    created: "2024-05-07T01:44:53.193147618-07:00"
+    created: "2024-05-07T02:10:16.842739285-07:00"
     dependencies:
     - condition: global.kibanaEnabled
       name: kibana
@@ -121,7 +121,7 @@ entries:
   harbor:
   - apiVersion: v1
     appVersion: 2.9.1
-    created: "2024-05-07T01:44:53.227717691-07:00"
+    created: "2024-05-07T02:10:16.878141659-07:00"
     description: An open source trusted cloud native registry that stores, signs,
       and scans content
     digest: 2ab4fd8225bda1e9796bcfbbaae738e1e157a84f8103f3fbec6425fcb375bfd5
@@ -162,7 +162,7 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 3.7.0
-    created: "2024-05-07T01:44:53.254879713-07:00"
+    created: "2024-05-07T02:10:16.901680012-07:00"
     dependencies:
     - condition: zookeeper.enabled
       name: zookeeper
@@ -199,7 +199,7 @@ entries:
       category: Database
     apiVersion: v2
     appVersion: 6.0.2
-    created: "2024-05-07T01:44:53.269078674-07:00"
+    created: "2024-05-07T02:10:16.912638434-07:00"
     dependencies:
     - name: common
       repository: https://marketplace.azurecr.io/helm/v1/repo
@@ -232,7 +232,7 @@ entries:
   mssql:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2024-05-07T01:44:53.27058623-07:00"
+    created: "2024-05-07T02:10:16.913951172-07:00"
     description: A Helm chart deploying mssql on Kubernetes cluster as a deployment
     digest: f0ecd74d9192bd06d0e6b0c9fa5850e8e4c3736494e465c98e968014f2c24a78
     name: mssql
@@ -245,7 +245,7 @@ entries:
       category: Database
     apiVersion: v2
     appVersion: 8.0.31
-    created: "2024-05-07T01:44:53.279883639-07:00"
+    created: "2024-05-07T02:10:16.922826195-07:00"
     dependencies:
     - name: common
       repository: https://marketplace.azurecr.io/helm/v1/repo
@@ -279,7 +279,7 @@ entries:
       category: Infrastructure
     apiVersion: v2
     appVersion: 1.4.0
-    created: "2024-05-07T01:44:53.288053547-07:00"
+    created: "2024-05-07T02:10:16.93078665-07:00"
     dependencies:
     - name: common
       repository: https://marketplace.azurecr.io/helm/v1/repo
@@ -322,7 +322,7 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 16.2.0
-    created: "2024-05-07T01:44:53.314279887-07:00"
+    created: "2024-05-07T02:10:16.950875314-07:00"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -355,7 +355,7 @@ entries:
       category: Database
     apiVersion: v2
     appVersion: 15.1.0
-    created: "2024-05-07T01:44:53.299639836-07:00"
+    created: "2024-05-07T02:10:16.93973573-07:00"
     dependencies:
     - name: common
       repository: https://marketplace.azurecr.io/helm/v1/repo
@@ -385,10 +385,21 @@ entries:
     urls:
     - https://diamanticom.github.io/catalog-helm-charts/postgresql-12.1.2.tgz
     version: 12.1.2
+  splunk:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2024-05-07T02:10:16.952264066-07:00"
+    description: A Helm chart for Kubernetes
+    digest: 41ecbb6e32ca9639f0f57757646e3cda571d9fb67f77b75813dcdbe70decddad
+    name: splunk
+    type: application
+    urls:
+    - https://diamanticom.github.io/catalog-helm-charts/splunk-0.1.0.tgz
+    version: 0.1.0
   splunk-operator:
   - apiVersion: v2
     appVersion: 0.0.1
-    created: "2024-05-07T01:44:53.33086866-07:00"
+    created: "2024-05-07T02:10:16.963584738-07:00"
     description: A Helm chart for Kubernetes
     digest: e2ac69021d7d8db3541865f9c7693c03006ee86d766da88dbad7703b979f735b
     name: splunk-operator
@@ -396,4 +407,4 @@ entries:
     urls:
     - https://diamanticom.github.io/catalog-helm-charts/splunk-operator-0.0.6.tgz
     version: 0.0.6
-generated: "2024-05-07T01:44:53.139472261-07:00"
+generated: "2024-05-07T02:10:16.791279645-07:00"
