@@ -5,7 +5,7 @@ entries:
       category: Infrastructure
     apiVersion: v2
     appVersion: 2.4.12
-    created: "2024-05-07T03:04:16.677901043-07:00"
+    created: "2024-05-13T00:58:02.504095404-07:00"
     dependencies:
     - condition: redis.enabled
       name: redis
@@ -50,7 +50,7 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 8.13.2
-    created: "2024-05-07T03:04:16.727394858-07:00"
+    created: "2024-05-13T00:58:02.58168674-07:00"
     dependencies:
     - condition: global.kibanaEnabled
       name: kibana
@@ -90,7 +90,7 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 8.12.2
-    created: "2024-05-07T03:04:16.701863491-07:00"
+    created: "2024-05-13T00:58:02.536612932-07:00"
     dependencies:
     - condition: global.kibanaEnabled
       name: kibana
@@ -121,7 +121,7 @@ entries:
   harbor:
   - apiVersion: v1
     appVersion: 2.9.1
-    created: "2024-05-07T03:04:16.738522662-07:00"
+    created: "2024-05-13T00:58:02.593787533-07:00"
     description: An open source trusted cloud native registry that stores, signs,
       and scans content
     digest: 2ab4fd8225bda1e9796bcfbbaae738e1e157a84f8103f3fbec6425fcb375bfd5
@@ -162,7 +162,7 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 3.7.0
-    created: "2024-05-07T03:04:16.761773539-07:00"
+    created: "2024-05-13T00:58:02.644157137-07:00"
     dependencies:
     - condition: zookeeper.enabled
       name: zookeeper
@@ -199,7 +199,7 @@ entries:
       category: Database
     apiVersion: v2
     appVersion: 6.0.2
-    created: "2024-05-07T03:04:16.77920776-07:00"
+    created: "2024-05-13T00:58:02.661992685-07:00"
     dependencies:
     - name: common
       repository: https://marketplace.azurecr.io/helm/v1/repo
@@ -232,7 +232,7 @@ entries:
   mssql:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2024-05-07T03:04:16.780738431-07:00"
+    created: "2024-05-13T00:58:02.675674552-07:00"
     description: A Helm chart deploying mssql on Kubernetes cluster as a deployment
     digest: f0ecd74d9192bd06d0e6b0c9fa5850e8e4c3736494e465c98e968014f2c24a78
     name: mssql
@@ -245,7 +245,7 @@ entries:
       category: Database
     apiVersion: v2
     appVersion: 8.0.31
-    created: "2024-05-07T03:04:16.789932153-07:00"
+    created: "2024-05-13T00:58:02.686862016-07:00"
     dependencies:
     - name: common
       repository: https://marketplace.azurecr.io/helm/v1/repo
@@ -279,7 +279,7 @@ entries:
       category: Infrastructure
     apiVersion: v2
     appVersion: 1.4.0
-    created: "2024-05-07T03:04:16.797912666-07:00"
+    created: "2024-05-13T00:58:02.697577062-07:00"
     dependencies:
     - name: common
       repository: https://marketplace.azurecr.io/helm/v1/repo
@@ -322,7 +322,7 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 16.2.0
-    created: "2024-05-07T03:04:16.825554865-07:00"
+    created: "2024-05-13T00:58:02.739212166-07:00"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -355,7 +355,7 @@ entries:
       category: Database
     apiVersion: v2
     appVersion: 15.1.0
-    created: "2024-05-07T03:04:16.811689226-07:00"
+    created: "2024-05-13T00:58:02.712811709-07:00"
     dependencies:
     - name: common
       repository: https://marketplace.azurecr.io/helm/v1/repo
@@ -388,12 +388,18 @@ entries:
   splunk:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2024-05-07T03:04:16.827141108-07:00"
+    created: "2024-05-13T00:58:02.740759887-07:00"
     description: A Helm chart for Kubernetes
-    digest: 41ecbb6e32ca9639f0f57757646e3cda571d9fb67f77b75813dcdbe70decddad
+    digest: c276258230cb0f80444497f0a36e18e8e18c65ea70d1167bdb8a28e1832e062c
+    maintainers:
+    - name: SushilSanjayBhile
+      url: https://github.com/SushilSanjayBhile/splunk-helm-chart
     name: splunk
+    sources:
+    - https://hub.docker.com/layers/splunk/splunk/9.1.3-patch1/images/sha256-12985957c5095e0440b286ec08df2c6a4315599c69c55c202f44fe7d8aa120ca?context=explore
+    - https://docs.splunk.com/Documentation/Splunk/9.2.1/Installation/DeployandrunSplunkEnterpriseinsideDockercontainers
     type: application
     urls:
     - https://diamanticom.github.io/catalog-helm-charts/splunk-0.1.0.tgz
     version: 0.1.0
-generated: "2024-05-07T03:04:16.649224176-07:00"
+generated: "2024-05-13T00:58:02.471447571-07:00"
