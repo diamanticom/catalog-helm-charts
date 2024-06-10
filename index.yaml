@@ -5,7 +5,7 @@ entries:
       category: Infrastructure
     apiVersion: v2
     appVersion: 2.4.12
-    created: "2024-05-31T00:12:04.308580993-07:00"
+    created: "2024-06-10T00:27:29.207568554-07:00"
     dependencies:
     - condition: redis.enabled
       name: redis
@@ -50,7 +50,7 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 8.13.2
-    created: "2024-05-31T00:12:04.361783222-07:00"
+    created: "2024-06-10T00:27:29.329542904-07:00"
     dependencies:
     - condition: global.kibanaEnabled
       name: kibana
@@ -90,7 +90,7 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 8.12.2
-    created: "2024-05-31T00:12:04.33395729-07:00"
+    created: "2024-06-10T00:27:29.251749923-07:00"
     dependencies:
     - condition: global.kibanaEnabled
       name: kibana
@@ -121,7 +121,7 @@ entries:
   harbor:
   - apiVersion: v1
     appVersion: 2.9.1
-    created: "2024-05-31T00:12:04.372194859-07:00"
+    created: "2024-06-10T00:27:29.362917348-07:00"
     description: An open source trusted cloud native registry that stores, signs,
       and scans content
     digest: 2ab4fd8225bda1e9796bcfbbaae738e1e157a84f8103f3fbec6425fcb375bfd5
@@ -162,7 +162,7 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 3.7.0
-    created: "2024-05-31T00:12:04.404549261-07:00"
+    created: "2024-06-10T00:27:29.418346446-07:00"
     dependencies:
     - condition: zookeeper.enabled
       name: zookeeper
@@ -199,7 +199,7 @@ entries:
       category: Database
     apiVersion: v2
     appVersion: 6.0.2
-    created: "2024-05-31T00:12:04.419732227-07:00"
+    created: "2024-06-10T00:27:29.434695029-07:00"
     dependencies:
     - name: common
       repository: https://marketplace.azurecr.io/helm/v1/repo
@@ -232,9 +232,9 @@ entries:
   mssql:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2024-05-31T00:12:04.421620981-07:00"
+    created: "2024-06-10T00:27:29.436116754-07:00"
     description: A Helm chart deploying mssql on Kubernetes cluster as a deployment
-    digest: 7dbe9bac9a510a28495695d407d530d6222231dd54bd06bc986bbba975b4bfc1
+    digest: a4d233ab02c6ed3d78c0535c50de1e70dedc97223457d5dde607fa29f713a67d
     icon: https://raw.githubusercontent.com/licenseware/charts/main/static/png/mssql.png
     maintainers:
     - name: Diamanti
@@ -252,7 +252,7 @@ entries:
       category: Database
     apiVersion: v2
     appVersion: 8.0.31
-    created: "2024-05-31T00:12:04.433733984-07:00"
+    created: "2024-06-10T00:27:29.446867244-07:00"
     dependencies:
     - name: common
       repository: https://marketplace.azurecr.io/helm/v1/repo
@@ -286,7 +286,7 @@ entries:
       category: Infrastructure
     apiVersion: v2
     appVersion: 1.4.0
-    created: "2024-05-31T00:12:04.444300882-07:00"
+    created: "2024-06-10T00:27:29.456323087-07:00"
     dependencies:
     - name: common
       repository: https://marketplace.azurecr.io/helm/v1/repo
@@ -329,7 +329,7 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 16.2.0
-    created: "2024-05-31T00:12:04.473056836-07:00"
+    created: "2024-06-10T00:27:29.485521039-07:00"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -362,7 +362,7 @@ entries:
       category: Database
     apiVersion: v2
     appVersion: 15.1.0
-    created: "2024-05-31T00:12:04.456609794-07:00"
+    created: "2024-06-10T00:27:29.470580533-07:00"
     dependencies:
     - name: common
       repository: https://marketplace.azurecr.io/helm/v1/repo
@@ -395,7 +395,7 @@ entries:
   splunk:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2024-05-31T00:12:04.475137691-07:00"
+    created: "2024-06-10T00:27:29.493908526-07:00"
     description: A Helm chart for Kubernetes
     digest: a70a82c995ccb4e52ef63c598553064c3bd28f1121a83c1ef881215ae6953640
     icon: https://www.socinvestigation.com/wp-content/uploads/2022/03/Splunk-134.jpg
@@ -411,4 +411,4 @@ entries:
     urls:
     - https://diamanticom.github.io/catalog-helm-charts/splunk-0.1.0.tgz
     version: 0.1.0
-generated: "2024-05-31T00:12:04.277604475-07:00"
+generated: "2024-06-10T00:27:29.154870894-07:00"
