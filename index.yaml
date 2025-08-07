@@ -5,7 +5,7 @@ entries:
       category: Infrastructure
     apiVersion: v2
     appVersion: 2.4.12
-    created: "2024-06-10T00:27:29.207568554-07:00"
+    created: "2025-08-06T23:47:00.89709717-07:00"
     dependencies:
     - condition: redis.enabled
       name: redis
@@ -50,7 +50,7 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 8.13.2
-    created: "2024-06-10T00:27:29.329542904-07:00"
+    created: "2025-08-06T23:47:00.996563293-07:00"
     dependencies:
     - condition: global.kibanaEnabled
       name: kibana
@@ -90,7 +90,7 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 8.12.2
-    created: "2024-06-10T00:27:29.251749923-07:00"
+    created: "2025-08-06T23:47:00.934936198-07:00"
     dependencies:
     - condition: global.kibanaEnabled
       name: kibana
@@ -121,7 +121,7 @@ entries:
   harbor:
   - apiVersion: v1
     appVersion: 2.9.1
-    created: "2024-06-10T00:27:29.362917348-07:00"
+    created: "2025-08-06T23:47:01.009094258-07:00"
     description: An open source trusted cloud native registry that stores, signs,
       and scans content
     digest: 2ab4fd8225bda1e9796bcfbbaae738e1e157a84f8103f3fbec6425fcb375bfd5
@@ -162,7 +162,7 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 3.7.0
-    created: "2024-06-10T00:27:29.418346446-07:00"
+    created: "2025-08-06T23:47:01.130069487-07:00"
     dependencies:
     - condition: zookeeper.enabled
       name: zookeeper
@@ -199,7 +199,7 @@ entries:
       category: Database
     apiVersion: v2
     appVersion: 6.0.2
-    created: "2024-06-10T00:27:29.434695029-07:00"
+    created: "2025-08-06T23:47:01.147743837-07:00"
     dependencies:
     - name: common
       repository: https://marketplace.azurecr.io/helm/v1/repo
@@ -232,7 +232,7 @@ entries:
   mssql:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2024-06-10T00:27:29.436116754-07:00"
+    created: "2025-08-06T23:47:01.157879585-07:00"
     description: A Helm chart deploying mssql on Kubernetes cluster as a deployment
     digest: a4d233ab02c6ed3d78c0535c50de1e70dedc97223457d5dde607fa29f713a67d
     icon: https://raw.githubusercontent.com/licenseware/charts/main/static/png/mssql.png
@@ -252,7 +252,7 @@ entries:
       category: Database
     apiVersion: v2
     appVersion: 8.0.31
-    created: "2024-06-10T00:27:29.446867244-07:00"
+    created: "2025-08-06T23:47:01.167789664-07:00"
     dependencies:
     - name: common
       repository: https://marketplace.azurecr.io/helm/v1/repo
@@ -286,7 +286,7 @@ entries:
       category: Infrastructure
     apiVersion: v2
     appVersion: 1.4.0
-    created: "2024-06-10T00:27:29.456323087-07:00"
+    created: "2025-08-06T23:47:01.176874516-07:00"
     dependencies:
     - name: common
       repository: https://marketplace.azurecr.io/helm/v1/repo
@@ -321,6 +321,48 @@ entries:
       category: Database
       images: |
         - name: os-shell
+          image: docker.io/bitnami/os-shell:12-debian-12-r49
+        - name: postgres-exporter
+          image: docker.io/bitnami/postgres-exporter:0.17.1-debian-12-r13
+        - name: postgresql
+          image: docker.io/bitnami/postgresql:17.5.0-debian-12-r20
+      licenses: Apache-2.0
+      tanzuCategory: service
+    apiVersion: v2
+    appVersion: 17.5.0
+    created: "2025-08-06T23:47:01.236988431-07:00"
+    dependencies:
+    - name: common
+      repository: oci://registry-1.docker.io/bitnamicharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: PostgreSQL (Postgres) is an open source object-relational database
+      known for reliability and data integrity. ACID-compliant, it supports foreign
+      keys, joins, views, triggers and stored procedures.
+    digest: 05d71a3897818dec0227a9e88cde3909c63632c920a14a28348c0ebe2a8ea18b
+    home: https://bitnami.com
+    icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/postgresql/img/postgresql-stack-220x234.png
+    keywords:
+    - postgresql
+    - postgres
+    - database
+    - sql
+    - replication
+    - cluster
+    maintainers:
+    - name: Broadcom, Inc. All Rights Reserved.
+      url: https://github.com/bitnami/charts
+    name: postgresql
+    sources:
+    - https://github.com/bitnami/charts/tree/main/bitnami/postgresql
+    urls:
+    - https://diamanticom.github.io/catalog-helm-charts/postgresql-16.7.21.tgz
+    version: 16.7.21
+  - annotations:
+      category: Database
+      images: |
+        - name: os-shell
           image: docker.io/bitnami/os-shell:12-debian-12-r16
         - name: postgres-exporter
           image: docker.io/bitnami/postgres-exporter:0.15.0-debian-12-r14
@@ -329,7 +371,7 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 16.2.0
-    created: "2024-06-10T00:27:29.485521039-07:00"
+    created: "2025-08-06T23:47:01.219754699-07:00"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -362,7 +404,7 @@ entries:
       category: Database
     apiVersion: v2
     appVersion: 15.1.0
-    created: "2024-06-10T00:27:29.470580533-07:00"
+    created: "2025-08-06T23:47:01.191530595-07:00"
     dependencies:
     - name: common
       repository: https://marketplace.azurecr.io/helm/v1/repo
@@ -395,7 +437,7 @@ entries:
   splunk:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2024-06-10T00:27:29.493908526-07:00"
+    created: "2025-08-06T23:47:01.277884405-07:00"
     description: A Helm chart for Kubernetes
     digest: a70a82c995ccb4e52ef63c598553064c3bd28f1121a83c1ef881215ae6953640
     icon: https://www.socinvestigation.com/wp-content/uploads/2022/03/Splunk-134.jpg
@@ -411,4 +453,4 @@ entries:
     urls:
     - https://diamanticom.github.io/catalog-helm-charts/splunk-0.1.0.tgz
     version: 0.1.0
-generated: "2024-06-10T00:27:29.154870894-07:00"
+generated: "2025-08-06T23:47:00.838563439-07:00"
